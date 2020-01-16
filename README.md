@@ -7,6 +7,8 @@
 
 Original code written by [@ibnux](https://twitter.com/ibnux)
 
+I've taken the code and rewritten quite a bit of it, especially the English translations. Some more work needs to be done, especially on the documentation side, and a lot of the install could be automated. 
+
 TODO: Rewrite README
 
 ---- 
@@ -14,7 +16,7 @@ TODO: Rewrite README
 Download [Mikrotik Login Template](https://github.com/ibnux/phpmixbill-mikrotik-login-template)
 
 
-Features:
+Features
 ----
 - Voucher Generator and Print
 - Self registration, user must have voucher before registration
@@ -23,11 +25,9 @@ Features:
 - Easy Installation
 - Multi Language
 
-TODOS:
+TO DO
 ----
 
-- SMS Notification to user
-- send receipt via SMS or EMAIL
 - Social Media Login
 
 Installation
