@@ -3,9 +3,11 @@
 
 ----
 
-Original code written by [@ibnux](https://twitter.com/ibnux), most of this README is also written by him. 
+Original code written by [@ibnux](https://twitter.com/ibnux)
 
 I've taken the code and rewritten quite a bit of it, especially the English translations. Some more work needs to be done, especially on the documentation side, and a lot of the install could be automated. It's also now functional. It's been a while since I've worked on this, so will need to rediscover how to install before documentation. 
+
+I've simplified the required information to register, and added more relevant details so an e-mail address will be required to sign up, instead of a voucher code. 
 
 
 ---- 
@@ -16,7 +18,7 @@ Download [Mikrotik Login Template](https://github.com/martydingo/phpmixbill-mikr
 Features
 ----
 - Voucher Generator and Print
-- Self registration, user must have voucher before registration
+- Self registration
 - Multi Router Mikrotik
 - Hotspot & PPPOE
 - User E-Mail Harvesting
