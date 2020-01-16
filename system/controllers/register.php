@@ -17,7 +17,7 @@ require_once 'system/autoload/PEAR2/Autoload.php';
 
 switch($do){
     case 'post':
-		
+
 		$username = _post('username');
         $fullname = _post('fullname');
         $password = _post('password');
@@ -30,10 +30,10 @@ switch($do){
 			$msg = '';
 			if(Validator::Length($username,35,2) == false){
 				$msg .= 'Username should be between 3 to 55 characters'. '<br>';
-			}
+			} /*
 			if(Validator::Length($fullname,36,2) == false){
 				$msg .= 'Full Name should be between 3 to 25 characters'. '<br>';
-			}
+			} */
 			if(!Validator::Length($password,35,2)){
 				$msg .= 'Password should be between 3 to 35 characters'. '<br>';
 
@@ -59,11 +59,11 @@ switch($do){
 					$p = ORM::for_table('tbl_plans')->find_one($v1['id_plan']);
 					$c = ORM::for_table('tbl_customers')->find_one($user);
 					$p = ORM::for_table('tbl_plans')->find_one($v1['id_plan']);
-					
+
 					$date_now = date("Y-m-d H:i:s");
 					$date_only = date("Y-m-d");
 					$time = date("H:i:s");
-					
+
 					$mikrotik = Router::_info($v1['routers']);
 					$date_exp = date("Y-m-d", mktime(0,0,0,date("m"),date("d") + $p['validity'],date("Y")));
 
@@ -125,7 +125,7 @@ switch($do){
 								->setArgument('password', $c['password'])
 							);
 						}
-						
+
 						$d = ORM::for_table('tbl_user_recharges')->create();
 						$d->customer_id = $user;
 						$d->username = $c['username'];
@@ -139,7 +139,7 @@ switch($do){
 						$d->routers = $v1['routers'];
 						$d->type = "Hotspot";
 						$d->save();
-						
+
 						// insert table transactions
 						$t = ORM::for_table('tbl_transactions')->create();
 						$t->invoice = "INV-"._raid(5);
@@ -153,11 +153,11 @@ switch($do){
 						$t->routers = $v1['routers'];
 						$t->type = "Hotspot";
 						$t->save();
-						
+
 						$v1->status = "1";
 						$v1->user = $c['username'];
 						$v1->save();
-						
+
 					}else{
 						try {
 							$client = new RouterOS\Client($mikrotik['ip_address'], $mikrotik['username'], $mikrotik['password']);
@@ -171,7 +171,7 @@ switch($do){
 							->setArgument('profile', $p['name_plan'])
 							->setArgument('password', $c['password'])
 						);
-						
+
 						$d = ORM::for_table('tbl_user_recharges')->create();
 						$d->customer_id = $user;
 						$d->username = $c['username'];
@@ -185,7 +185,7 @@ switch($do){
 						$d->routers = $v1['routers'];
 						$d->type = "PPPOE";
 						$d->save();
-						
+
 						// insert table transactions
 						$t = ORM::for_table('tbl_transactions')->create();
 						$t->invoice = "INV-"._raid(5);
@@ -267,7 +267,7 @@ switch($do){
 			_msglog('e',$_L['Invalid_Username_or_Password']);
 			r2(U.'login');
 		}*/
-		
+
         break;
 
     default:
@@ -278,4 +278,3 @@ switch($do){
         $ui->display('register.tpl');
         break;
 }
-

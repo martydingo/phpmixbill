@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>{$_title} - {$_L['Register']}</title>
 	<link rel="shortcut icon" href="{$_theme}/images/logo.png" type="image/x-icon" />
-	
+
 	<!-- Icons -->
 	<link rel="stylesheet" href="{$_theme}/fonts/ionicons/css/ionicons.min.css">
 	<link rel="stylesheet" href="{$_theme}/fonts/font-awesome/css/font-awesome.min.css">
@@ -13,14 +13,14 @@
 	<!-- Plugins -->
 	<link rel="stylesheet" href="{$_theme}/styles/plugins/waves.css">
 	<link rel="stylesheet" href="{$_theme}/styles/plugins/perfect-scrollbar.css">
-	
+
 	<!-- Css/Less Stylesheets -->
 	<link rel="stylesheet" href="{$_theme}/styles/bootstrap.min.css">
 	<link rel="stylesheet" href="{$_theme}/styles/main.min.css">
 
  	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'> -->
 	<!-- Match Media polyfill for IE9 -->
-	<!--[if IE 9]> <script src="{$_theme}/scripts/ie/matchMedia.js"></script>  <![endif]--> 
+	<!--[if IE 9]> <script src="{$_theme}/scripts/ie/matchMedia.js"></script>  <![endif]-->
 
 </head>
 <body id="app" class="app off-canvas body-full">
@@ -54,9 +54,9 @@
 					<div class="panel-body">
 						<div class="form-container">
 							<div class="md-input-container md-float-label">
-								<input type="text" required class="md-input" id="username" value="{$username}" placeholder="{$_L['Phone_Number']}" name="username">
+								<input type="text" required class="md-input" id="username" value="{$username}" name="username">
 								<label>{$_L['Username']}</label>
-							</div>
+							</div> <!--
 							<div class="md-input-container md-float-label">
 								<input type="text" required class="md-input" id="fullname" value="{$fullname}" name="fullname">
 								<label>{$_L['Full_Name']}</label>
@@ -76,7 +76,7 @@
 			<div class="col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">2. {$_L['Register_Member']}</div>
-					<div class="panel-body">
+					<div class="panel-body">-->
 						<div class="form-container">
 							<div class="md-input-container md-float-label">
 								<input type="password" required class="md-input" id="password" name="password">
@@ -98,7 +98,7 @@
 								<div class="btn-group">
 									<a href="{$_url}login" class="btn btn-success">{$_L['Cancel']}</a>
 								</div>
-							</div> 
+							</div>
 						</div>
 					</div>
 				</div>

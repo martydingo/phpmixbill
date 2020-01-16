@@ -5,21 +5,21 @@
 				<div class="panel panel-default panel-hovered panel-stacked mb30">
 					<div class="panel-heading">{$_L['Edit_Contact']}</div>
 						<div class="panel-body">
-						
-							<form class="form-horizontal" method="post" role="form" action="{$_url}customers/edit-post" >         
+
+							<form class="form-horizontal" method="post" role="form" action="{$_url}customers/edit-post" >
 							<input type="hidden" name="id" value="{$d['id']}">
 								<div class="form-group">
 									<label class="col-md-2 control-label">{$_L['Username']}</label>
 									<div class="col-md-6">
 										<input type="text" class="form-control" id="username" name="username" value="{$d['username']}">
 									</div>
-								</div>
+								</div> <!--
 								<div class="form-group">
 									<label class="col-md-2 control-label">{$_L['Full_Name']}</label>
 									<div class="col-md-6">
 										<input type="text" class="form-control" id="fullname" name="fullname" value="{$d['fullname']}">
 									</div>
-								</div>
+								</div> -->
 								<div class="form-group">
 									<label class="col-md-2 control-label">{$_L['Password']}</label>
 									<div class="col-md-6">
@@ -32,7 +32,7 @@
 									<div class="col-md-6">
 										<input type="password" class="form-control" id="cpassword" name="cpassword">
 									</div>
-								</div>
+								</div> <!--
 								<div class="form-group">
 									<label class="col-md-2 control-label">{$_L['Address']}</label>
 									<div class="col-md-6">
@@ -44,7 +44,7 @@
 									<div class="col-md-6">
 										<input type="text" class="form-control" id="phonenumber" name="phonenumber" value="{$d['phonenumber']}">
 									</div>
-								</div>
+								</div> -->
 
 								<div class="form-group">
 									<div class="col-lg-offset-2 col-lg-10">
