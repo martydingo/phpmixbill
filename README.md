@@ -1,19 +1,16 @@
 # PHP Mikrotik Billing 
 ----
 
-![N|phpmixbill](http://4.bp.blogspot.com/-3OWL5OI7pqU/VjocUDdzMDI/AAAAAAAAAiA/s_XJN0_mDlk/s640/Screenshot_8.png)
-
 ----
 
-Original code written by [@ibnux](https://twitter.com/ibnux)
+Original code written by [@ibnux](https://twitter.com/ibnux), most of this README is also written by him. 
 
-I've taken the code and rewritten quite a bit of it, especially the English translations. Some more work needs to be done, especially on the documentation side, and a lot of the install could be automated. 
+I've taken the code and rewritten quite a bit of it, especially the English translations. Some more work needs to be done, especially on the documentation side, and a lot of the install could be automated. It's also now functional. It's been a while since I've worked on this, so will need to rediscover how to install before documentation. 
 
-TODO: Rewrite README
 
 ---- 
 
-Download [Mikrotik Login Template](https://github.com/ibnux/phpmixbill-mikrotik-login-template)
+Download [Mikrotik Login Template](https://github.com/martydingo/phpmixbill-mikrotik-login-template)
 
 
 Features
@@ -29,10 +26,8 @@ TO DO
 ----
 
 - Social Media Login
+- Documentation, especially around install. 
 
-Installation
-----
-See [WIKI](https://github.com/ibnux/phpmixbill/wiki/Instalation)
 
 System Requirements
 ----
