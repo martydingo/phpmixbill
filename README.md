@@ -1,4 +1,4 @@
-# PHP Mikrotik Billing 
+# rosSpot - RouterOS Hotspot Billing & Voucher Management Platform
 ----
 
 ----
@@ -19,8 +19,7 @@ Features
 - Self registration, user must have voucher before registration
 - Multi Router Mikrotik
 - Hotspot & PPPOE
-- Easy Installation
-- Multi Language
+- User E-Mail Harvesting
 
 TO DO
 ----
